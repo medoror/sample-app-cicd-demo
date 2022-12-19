@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: sample-app-cicd-demo
+    image: sample-app-cicd-demo-image
+    build:
+      context: .
+    ports:
+      - 8080:3000
